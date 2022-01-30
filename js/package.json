@@ -21,10 +21,10 @@
     "last 2 versions"
   ],
   "scripts": {
-    "dev": "npm run build:dev-dll && webpack-dashboard -m -- webpack --env=development --watch",
+    "dev": "yarn run build:dev-dll && webpack-dashboard -m -- webpack --env=development --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier \"src/**/*.{ts,js,json,css,vue}\" --write",
-    "build:dev": "npm run build:dev-dll && webpack --env=development --progress",
+    "build:dev": "yarn run build:dev-dll && webpack --env=development --progress",
     "build:dev-dll": "webpack --config webpack.dll.js",
     "build:prod": "webpack --env=production --progress",
     "update-lab-extension": "webpack --config webpack.labExtension.js"
